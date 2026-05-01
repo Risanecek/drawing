@@ -20,6 +20,12 @@ public class Group extends XY {
         this.scaleY = scaleY;
     }
 
+    //
+    public void setScale(double scale) {
+        this.scaleX = scale;
+        this.scaleY = scale;
+    }
+
     @Override
     public void draw(Graphics2D g) {
         AffineTransform transform = g.getTransform();
